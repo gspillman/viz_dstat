@@ -42,10 +42,4 @@ kill_server() {
 }
 trap 'kill_server' SIGTERM SIGINT # Kill measurement when webserver is killed
 
-echo Starting web server--point your browser to http://localhost:12121
-python -m SimpleHTTPServer 12121 2> http_log&
-SRV_PID=$!
-sleep 0.5
-echo "Web server is up. Press a key to stop web server"
-read text
-kill_server
+python -m http.server 12121
