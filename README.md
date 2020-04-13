@@ -8,6 +8,7 @@ https://github.com/jschaub30/viz_dstat
 # Requires
 - [python 3](https://www.python.org/) - Unless running via Docker (see below)
 - Assumes you have generated a series of dstat csv reports 
+- [Docker](https://www.docker.com) (if you cannot run Python 3 or need to run this via CI instance such as Jenkins)
 
 Also uses [Dygraphs](http://dygraphs.com/) for javascript charts (included)
 
