@@ -1,16 +1,17 @@
-#viz_dstat_lite
+# viz_dstat_lite
+
 Visualize dstat results on a web page.
 
 Modified scripts from:
 https://github.com/jschaub30/viz_dstat
 
-#Requires
+# Requires
 - [python 3](https://www.python.org/) - Unless running via Docker (see below)
 - Assumes you have generated a series of dstat csv reports 
 
 Also uses [Dygraphs](http://dygraphs.com/) for javascript charts (included)
 
-##Visualize existing file locally:
+## Visualize existing file locally:
 
 From the project directory, just run
 
@@ -25,7 +26,7 @@ http://localhost:12121/index<insert report id>.html
 
 Note that this currently only supports up to 3 concurrent reports. 
 
-##Visualize existing files with Docker
+## Visualize existing files with Docker
 
 To visualize reports within a Docker container (recommended for CI instances or for Python 2 users):
 
@@ -41,6 +42,6 @@ Then
 
 You can then view the report at http://localhost:80
 
-##To Dos:
+## To Dos:
 
 - Modify script to dynamially append tabs for reports beyond initial 3
